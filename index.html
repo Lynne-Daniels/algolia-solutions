@@ -12,11 +12,18 @@
 <body>
   <div class="contain">  
     <header>  
-      <input type="text" placeholder="Search for Restaurants by Name, Cuisine, Location">
+      <input type="text" id="search-box" autocomplete="off" placeholder="Search for Restaurants by Name, Cuisine, Location">
     </header>
     <div class="row">
-      <nav>
-        navigation
+      <nav id="navigation">
+       <p>Cuisine/Food Types</p>
+       <ul class="filter">
+       <li><span class="checkbox">☑</span><span class="filter-term">American</span><span class="count">46</span></li>
+       <li><span class="checkbox">☒</span><span class="filter-term">American</span><span class="count">46</span></li>
+       <li><span class="checkbox">☐</span><span class="filter-term">American</span><span class="count">46</span></li>
+       <li><span class="checkbox">☑</span><span class="filter-term">American</span><span class="count">46</span></li>
+      </ul>
+
       </nav>
       <main id="search-results">
       <div class="restaurant">

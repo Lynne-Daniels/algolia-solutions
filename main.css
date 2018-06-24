@@ -12,7 +12,7 @@ body {
   font-size: 15px;
 }
 
-::placeholder, .info-line, .header {
+::placeholder, .info-line, .header, .count {
   color: rgba(112, 112, 112, 60);
   font-weight: 200;
 }
@@ -25,22 +25,35 @@ line-height: 2.5;
 padding-left: 7px;
 box-sizing: border-box;
 }
-@media screen and (min-width: 450px) {  
-.contain {
-    margin: 45px;
-}
-header {
-  border-width: 22px 25px;
-  border-color: #1C688E;
-  border-style: solid;
-}
 nav {
-  display: inline-block;
-  width: 184px;
+  margin: 0 .2rem;
 }
-main {
-  display: inline-block;
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: .2rem;
 }
+nav li {
+  line-height: 1.5rem;
+}
+@media screen and (min-width: 450px) {  
+  .contain {
+      margin: 45px;
+  }
+  header {
+    border-width: 22px 25px;
+    border-color: #1C688E;
+    border-style: solid;
+  }
+  nav {
+    display: inline-block;
+    width: 184px;
+    padding: 0 0 0 1rem;
+  }
+  main {
+    display: inline-block;
+  }
 }
 
 header {
@@ -53,6 +66,7 @@ input {
 }
 nav {
   border: 1px solid lightblue;
+  align-self: flex-start;
 }
 main {
   border: 1px solid cornflowerblue;
@@ -74,6 +88,7 @@ div {
 }
 .list-item {
   max-width: 80px;
+  display: inline-block;
 }
 .left {
   max-width: 25%;
@@ -83,6 +98,16 @@ div {
 .right {
   float: right;
   line-height: 2;
+}
+.checkbox {
+  font-size: 1.5rem;
+  float: left;
+  width: auto;
+  
+}
+.count {
+  float: right;
+  /* line-height: 1.7rem; */
 }
 /* MOBILE FIRST^ LARGER SCREENS BELOW */
 @media screen and (min-width: 450px) {  

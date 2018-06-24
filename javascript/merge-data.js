@@ -51,3 +51,11 @@ fs.readFile('./dataset/restaurants_info.csv', 'utf8', (err, data) => {
 
   return console.log('upload complete');
 });
+
+/*
+Use the console to add faceting, or in code use something like:
+from https://www.algolia.com/doc/guides/searching/faceting/#declaring-attributes-for-faceting:
+index.setSettings({
+  'attributesForFaceting': ['category', 'author']
+})
+*/
