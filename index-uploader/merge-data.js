@@ -1,7 +1,7 @@
 const fs = require('fs');
 const algoliasearch = require('algoliasearch');
 
-const client = algoliasearch('KKSCWMQ6I2', 'TODO make master code an env variable if needed, only search code can be on web');
+const client = algoliasearch('KKSCWMQ6I2', '618f0cd9743948e6668e9557f39e1932');
 
 const index = client.initIndex('restaurants');
 
@@ -51,11 +51,3 @@ fs.readFile('./dataset/restaurants_info.csv', 'utf8', (err, data) => {
 
   return console.log('upload complete');
 });
-
-/*
-Use the console to add faceting, or in code use something like:
-from https://www.algolia.com/doc/guides/searching/faceting/#declaring-attributes-for-faceting:
-index.setSettings({
-  'attributesForFaceting': ['category', 'author']
-})
-*/

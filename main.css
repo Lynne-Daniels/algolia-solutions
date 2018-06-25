@@ -37,24 +37,6 @@ nav ul {
 nav li {
   line-height: 1.5rem;
 }
-@media screen and (min-width: 450px) {  
-  .contain {
-      margin: 45px;
-  }
-  header {
-    border-width: 22px 25px;
-    border-color: #1C688E;
-    border-style: solid;
-  }
-  nav {
-    display: inline-block;
-    width: 184px;
-    padding: 0 0 0 1rem;
-  }
-  main {
-    display: inline-block;
-  }
-}
 
 header {
 border-width: 10px 12px;
@@ -68,9 +50,7 @@ nav {
   border: 1px solid lightblue;
   align-self: flex-start;
 }
-main {
-  border: 1px solid cornflowerblue;
-}
+
 div {
   /* border: 1px solid gold; */
   background: white;
@@ -115,6 +95,17 @@ div {
       margin: 45px;
   }
   header {
-      border: 20px solid #1C688E;
+    border-width: 22px 25px;
+    border-color: #1C688E;
+    border-style: solid;
+  }
+  nav {
+    display: inline-block;
+    width: 184px;
+    padding: 0 0 0 1rem;
+  }
+  main {
+    display: inline-block;
+    align-self: flex-start;
   }
 }

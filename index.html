@@ -15,26 +15,8 @@
       <input type="text" id="search-box" autocomplete="off" placeholder="Search for Restaurants by Name, Cuisine, Location">
     </header>
     <div class="row">
-      <nav id="navigation">
-       <p>Cuisine/Food Types</p>
-       <ul class="filter">
-       <li><span class="checkbox">☑</span><span class="filter-term">American</span><span class="count">46</span></li>
-       <li><span class="checkbox">☒</span><span class="filter-term">American</span><span class="count">46</span></li>
-       <li><span class="checkbox">☐</span><span class="filter-term">American</span><span class="count">46</span></li>
-       <li><span class="checkbox">☑</span><span class="filter-term">American</span><span class="count">46</span></li>
-      </ul>
-
-      </nav>
+      <nav id="navigation"></nav>
       <main id="search-results">
-      <div class="restaurant">
-        <div class="row">
-          <div class="left"><img class="list-item"src="https:\/\/www.opentable.com\/img\/restimages\/115618.jpg" alt="${item.image_url}"></div>
-          <div class="right">
-            <div class="info-line heading">${item.name}</div>
-            <div class="info-line">${'⭐'.repeat(Math.floor(item.stars_count))} ${item.reviews_count}</div>
-            <div class="info-line"></div>${item.food_type} | ${item.neighborhood} | ${item.price_range}</div>
-        </div>
-      </div>
     </div>
   </main>
     <script src="./bundle.js"></script>

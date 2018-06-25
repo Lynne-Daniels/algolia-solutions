@@ -1,6 +1,6 @@
 const algoliasearch = require('algoliasearch');
 
-const client = algoliasearch('KKSCWMQ6I2', 'TODO use master key');
+const client = algoliasearch('KKSCWMQ6I2', '618f0cd9743948e6668e9557f39e1932');
 
 var index = client.initIndex('contacts');
 
