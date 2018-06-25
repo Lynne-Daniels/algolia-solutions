@@ -47,7 +47,6 @@ input {
   width: 100%;
 }
 nav {
-  border: 1px solid lightblue;
   align-self: flex-start;
 }
 
@@ -102,7 +101,7 @@ div {
   nav {
     display: inline-block;
     width: 184px;
-    padding: 0 0 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
   main {
     display: inline-block;
